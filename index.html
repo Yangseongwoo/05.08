@@ -82,9 +82,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script>
-        const aniduration = 1;
-        gsap.to('.box', {duration: aniduration, x: 300, y: 300, rotation:360, ease:'elastic,out(1, 0.3)', yoyo:true, repeat:2})
-
+        const aniDuration = 3;
+        gsap.to('.box', {duration: aniDuration, x:300, y:300, rotation: 360, ease: 'elastic.out(1, .3)', yoyo:true, repeat:2})
 
         const horizontal = document.querySelector('.horizontal');  /* 먼저 가져와야 하기 때문에 */
         const vertical = document.querySelector('.vertical');
